@@ -1,5 +1,5 @@
 # Fab-plotter-firmware
-This repository contains the Arduino code for a Mini CNC Plotter, designed to draw on surfaces using two stepper motors and a servo-controlled pen. The project uses the AccelStepper and MultiStepper libraries to control the stepper motors and achieve smooth motion.
+This repository contains the SAMD21E17A for a Mini CNC Plotter, designed to draw on surfaces using two stepper motors and a servo-controlled pen. The project uses the AccelStepper and MultiStepper libraries to control the stepper motors and achieve smooth motion.
 
 
 
@@ -33,7 +33,7 @@ This repository contains the Arduino code for a Mini CNC Plotter, designed to dr
  const int penZUp = 50;
 const int penZDown = 80;
 
-const int penServoPin = 11;
+const int penServoPin = 15;
 
 const int stepsPerRevolution = 2048;
 
@@ -62,9 +62,9 @@ float Zmax = 1;
 
 1.G00 or G01: Move to a specific position.
 
-2.M03 S12: Lower the pen.
+2.M03 S123: Lower the pen.
 
-3.M03 S00: Lift the pen.
+3.M03 S000: Lift the pen.
 
 # Acknowledgments
 
