@@ -8,10 +8,10 @@ MultiStepper steppers;
 
 #define LINE_BUFFER_LENGTH 1024
 
-const int penZUp = 50;
+const int penZUp = 40;
 const int penZDown = 80;
 
-const int penServoPin = 11;
+const int penServoPin = 15;
 
 const int stepsPerRevolution = 2048;
 
