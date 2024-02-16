@@ -4,7 +4,7 @@ This repository contains the SAMD21E17A for a Mini CNC Plotter, designed to draw
 
 
 # HARDWARE REQUIREMENT
- 1.Arduino board
+ 1.SAMD21E17A MCU board
  
  2.Two stepper motors with drivers
 
@@ -22,7 +22,7 @@ This repository contains the SAMD21E17A for a Mini CNC Plotter, designed to draw
 
  2.Connect stepper motor 2 to pins 6, 8, 7, and 9 on the Arduino.
 
- 3.Connect the servo motor to pin 11 on the Arduino.
+ 3.Connect the servo motor to pin 15 on the Arduino.
 
  4.Ensure the power supply is appropriately connected to power the motors.
 
@@ -30,7 +30,7 @@ This repository contains the SAMD21E17A for a Mini CNC Plotter, designed to draw
 
  Adjust the following parameters in the code to match your setup:
 
- const int penZUp = 50;
+ const int penZUp = 40;
 const int penZDown = 80;
 
 const int penServoPin = 15;
@@ -49,7 +49,7 @@ float Zmax = 1;
 
 
 # Usage
-1.Upload the code to your Arduino board.
+1.Upload the code to your SAMD21E17A board.
 
 2.Connect the Mini CNC Plotter to your computer via USB.
 
